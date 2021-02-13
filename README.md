@@ -1,4 +1,4 @@
-# Hackathon-CurseIT | Lorem Ipsum
+# Hackathon-CourseIT | Lorem Ipsum
 
 > _Integrantes: Ian Acosta, Lucas Cifuentes, Juan Arnaldo, Franco Rodriguez_
 
