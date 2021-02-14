@@ -1,0 +1,17 @@
+.grid {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.grid .left {
+  flex: 1;
+}
+
+.grid .middle {
+  flex: 2;
+}
+
+.grid .right {
+  flex: 1;
+}
