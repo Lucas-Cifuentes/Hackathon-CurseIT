@@ -1,0 +1,11 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--main-color);
+  margin: 0 0.5rem;
+}
