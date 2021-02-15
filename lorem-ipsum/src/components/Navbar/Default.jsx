@@ -7,10 +7,6 @@ const Default = () => {
     {
       name: 'Contacto',
       href: '/contacto'
-    },
-    {
-      name: 'Mascotas',
-      href: '/mascotas'
     }
   ]
 
