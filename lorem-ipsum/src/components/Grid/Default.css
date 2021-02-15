@@ -1,17 +1,6 @@
 .grid {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1rem;
   margin-top: 2rem;
-}
-
-.grid .left {
-  flex: 1;
-}
-
-.grid .middle {
-  flex: 2;
-}
-
-.grid .right {
-  flex: 1;
 }
