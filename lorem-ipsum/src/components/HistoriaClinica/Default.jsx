@@ -3,7 +3,6 @@ import Item from './_children/Item'
 import './Default.css'
 
 const Default = ({ title='', data }) => {
-  console.log(data);
   return (
     <div className="historia">
       <h1>{ title }</h1>

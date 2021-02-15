@@ -2,7 +2,6 @@ import React from 'react'
 import './Item.css'
 
 const Item = ({ item }) => {
-  console.log('Item: ', item)
   return (
     <div className="item">
       <h5>
