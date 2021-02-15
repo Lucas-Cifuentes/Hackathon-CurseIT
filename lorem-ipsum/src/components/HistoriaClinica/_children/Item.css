@@ -1,0 +1,20 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.5px solid var(--main-color);
+  padding: 0 1rem 1.5rem 1rem;
+}
+
+.item h5, p {
+  margin: 0.5rem 0;
+}
+
+.item h5 {
+  color: var(--secondary-color);
+  font-weight: 400;
+}
+
+.item p {
+  overflow: hidden;
+  max-width: 100%;
+}

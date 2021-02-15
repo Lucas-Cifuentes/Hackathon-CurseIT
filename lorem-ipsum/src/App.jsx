@@ -1,6 +1,7 @@
 import Grid from './components/Grid/Default';
 import Navbar from './components/Navbar/Default';
 import Card from './components/Card/Default';
+import HistoriaClinica from './components/HistoriaClinica/Default';
 import './App.css'
 
 function App() {
@@ -14,12 +15,15 @@ function App() {
       } 
       middle={
         <Card>
-        <p>middle</p> 
+          <p>middle</p> 
         </Card>
     } 
       right={
         <Card>
-          <p>right</p>
+          <HistoriaClinica 
+            title="Historia Clinica"
+            data={[{ date: '15/2/2021', description: 'Probando item', id: '1' }, { date: '16/2/2021', description: 'Probando item 2', id: '2' }]}
+          />
         </Card>
       } />
     </div>
