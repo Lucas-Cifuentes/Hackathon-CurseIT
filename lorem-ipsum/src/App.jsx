@@ -5,6 +5,9 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Card from './components/Card/Default';
+import HistoriaClinica from './components/HistoriaClinica/Default';
+import Pet from './components/Pet/Default';
 import './App.css'
 import { useState } from 'react';
 
@@ -23,25 +26,3 @@ function App() {
 }
 
 export default App;
-
-{/* <div className="container" >
-      <Navbar />
-      <Grid left={
-        <Card>
-          <p>left</p>
-        </Card>
-      } 
-      middle={
-        <Card>
-          <SignIn />
-        </Card>
-    } 
-      right={
-        <Card>
-          <HistoriaClinica 
-            title="Historia Clinica"
-            data={[{ date: '15/2/2021', description: 'Probando item', id: '1' }, { date: '16/2/2021', description: 'Probando item 2', id: '2' }]}
-          />
-        </Card>
-      } />
-    </div> */}
