@@ -1,12 +1,30 @@
-import Grid from './components/Grid/Default';
 import Navbar from './components/Navbar/Default';
-import Card from './components/Card/Default';
-import HistoriaClinica from './components/HistoriaClinica/Default';
+import SignIn from './pages/SignIn';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 import './App.css'
+import { useState } from 'react';
 
 function App() {
+  const [userID, setUserID] = useState(null)
   return (
-    <div className="container" >
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route exact path="/login">
+          <SignIn userID={userID} setUserID={setUserID} />
+        </Route>
+      </Switch>
+    </Router>
+  );
+}
+
+export default App;
+
+{/* <div className="container" >
       <Navbar />
       <Grid left={
         <Card>
@@ -15,7 +33,7 @@ function App() {
       } 
       middle={
         <Card>
-          <p>middle</p> 
+          <SignIn />
         </Card>
     } 
       right={
@@ -26,8 +44,4 @@ function App() {
           />
         </Card>
       } />
-    </div>
-  );
-}
-
-export default App;
+    </div> */}
