@@ -1,33 +1,27 @@
-import Grid from './components/Grid/Default';
 import Navbar from './components/Navbar/Default';
+import SignIn from './pages/SignIn';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 import Card from './components/Card/Default';
 import HistoriaClinica from './components/HistoriaClinica/Default';
 import Pet from './components/Pet/Default';
 import './App.css'
+import { useState } from 'react';
 
 function App() {
+  const [userID, setUserID] = useState(null)
   return (
-    <div className="container" >
+    <Router>
       <Navbar />
-      <Grid left={
-        <Card>
-          <Pet></Pet>
-        </Card>
-      } 
-      middle={
-        <Card>
-          <p>middle</p> 
-        </Card>
-    } 
-      right={
-        <Card>
-          <HistoriaClinica 
-            title="Historia Clinica"
-            data={[{ date: '15/2/2021', description: 'Probando item', id: '1' }, { date: '16/2/2021', description: 'Probando item 2', id: '2' }]}
-          />
-        </Card>
-      } />
-    </div>
+      <Switch>
+        <Route exact path="/login">
+          <SignIn userID={userID} setUserID={setUserID} />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

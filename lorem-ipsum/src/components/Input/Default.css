@@ -1,0 +1,15 @@
+.container input {
+  margin: 0 0 1rem 2rem;
+  padding: 0.5rem 1rem;
+  border: 0;
+  background-color: var(--background-color-1);
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.container input:focus {
+  outline-color: var(--main-color);
+}
+
+.container label {
+  margin: 0 0 0.5rem 2rem;
+}
