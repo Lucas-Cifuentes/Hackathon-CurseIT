@@ -1,0 +1,13 @@
+{
+    "name": "courseit/lorem-ipsum",
+    "description": "API for lorem-ipsum.",
+    "authors": [
+        {
+            "name": "IanAcosta7",
+            "email": "ianacosta700@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "~8"
+    }
+}
