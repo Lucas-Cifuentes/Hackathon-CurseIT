@@ -25,24 +25,24 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => 'dev-main',
-    'version' => 'dev-main',
+    'pretty_version' => '1.0.0+no-version-set',
+    'version' => '1.0.0.0',
     'aliases' => 
     array (
     ),
-    'reference' => '17eaa96ee32cfb4fb4735c2ffa0dde45994e38fc',
-    'name' => 'courseit/lorem-ipsum',
+    'reference' => NULL,
+    'name' => 'zapli/lorem',
   ),
   'versions' => 
   array (
-    'courseit/lorem-ipsum' => 
+    'zapli/lorem' => 
     array (
-      'pretty_version' => 'dev-main',
-      'version' => 'dev-main',
+      'pretty_version' => '1.0.0+no-version-set',
+      'version' => '1.0.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '17eaa96ee32cfb4fb4735c2ffa0dde45994e38fc',
+      'reference' => NULL,
     ),
   ),
 );

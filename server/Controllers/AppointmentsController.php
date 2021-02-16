@@ -2,6 +2,8 @@
 
 namespace Controllers;
 
+require_once "./ADO.php";
+
 use ADO as ADO;
 
 class AppointmentsController {

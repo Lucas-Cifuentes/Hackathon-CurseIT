@@ -1,10 +1,8 @@
 <?php 
 
- require "Config/Autoload.php";
+ require "Request.php";
+ require "Router.php";
 
- use Config\Autoload as Autoload;
- Autoload::Start();
- 
  ini_set('display_errors', 1);
  ini_set('display_startup_errors', 1);
  error_reporting(E_ALL);

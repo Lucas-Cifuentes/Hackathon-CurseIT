@@ -6,61 +6,71 @@ class Request
    private $parameters = array();
 
    public function __construct(){
-      $url = filter_input(INPUT_GET, "url", FILTER_SANITIZE_URL);
-      $urlArray = explode ("/", $url);
-      $urlArray = array_filter($urlArray);
 
-      if(empty($urlArray)) $this->controller = 'Home';
-      else $this->controller = ucwords(array_shift($urlArray));
-      
-      if(empty($urlArray)) $this->method = 'Index';
-      else $this->method = array_shift($urlArray);
+    $url = filter_input(INPUT_GET, "url", FILTER_SANITIZE_URL);
+    $urlArray = explode ("/", $url);
+    $urlArray = array_filter($urlArray);
 
-      $methodRequest = $this->getMethodRequest();
+    if(empty($urlArray)) $this->controller = 'Home';
+    else $this->controller = ucwords(array_shift($urlArray));
+    
+    
+    if(empty($urlArray)) $this->method = 'Index';
+    else $this->method = array_shift($urlArray);
 
-      if($methodRequest == 'GET')
-      {
-         unset($_GET["url"]);
+    
 
-         if(!empty($_GET))
-         {
-               foreach($_GET as $key => $value)
-                  array_push($this->parameters, $value);
-         }
-         else
-            $this->parameters = $urlArray;
-      
-      }
-      elseif ($_POST)
-            $this->parameters = $_POST;
+    $methodRequest = $this->getMethodRequest();
 
-      if($_FILES)
-      {
+    if($methodRequest == 'GET')
+    {
+        unset($_GET["url"]);
+
+        if(!empty($_GET))
+        {
+            foreach($_GET as $key => $value)
+               array_push($this->parameters, $value);
+        }
+        else
+           $this->parameters = $urlArray;
+    
+   }
+   elseif ($_POST)
+         $this->parameters = $_POST;
+
+   if($_FILES)
+   {
+     
          unset($this->parameterers["button"]);
 
          foreach($_FILES as $file)
             array_push($this->parameters, $file);
-      }
 
    }
 
-   private static function getMethodRequest()
-   {
-      return $_SERVER['REQUEST_METHOD'];
-   }
-
-   public function getController(){
-      return $this->controller;
-   }
-
-
-
-   public function getMethod(){
-      return $this->method;
-   }
-
-
-   public function getParameters(){
-      return $this->parameters;
-   }
 }
+
+private static function getMethodRequest()
+{
+    return $_SERVER['REQUEST_METHOD'];
+}
+
+public function getController(){
+   return $this->controller;
+}
+
+
+
+public function getMethod(){
+   return $this->method;
+}
+
+
+public function getParameters(){
+   return $this->parameters;
+}
+
+
+}
+
+?>
