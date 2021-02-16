@@ -4,7 +4,7 @@ namespace Controllers;
 
 use ADO as ADO;
 
-class MedicalHistoriesController {
+class AppointmentsController {
     public function Index() {
         $result = ADO::execute_sp("sp_get_appointments");
         echo json_encode($result, JSON_PRETTY_PRINT);
