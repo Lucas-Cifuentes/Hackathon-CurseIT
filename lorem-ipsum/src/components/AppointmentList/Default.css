@@ -1,0 +1,28 @@
+.appointment-title {
+    font-family: Telex;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 43px;
+display: flex;
+align-items: center;
+
+color: #2B2C28;
+}
+
+.appointment-table-element {
+    display: grid;
+
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.appointment-table-header {
+    font-family: Telex;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #2B2C28;
+
+}

@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Default';
 import Card from './components/Card/Default';
 import HistoriaClinica from './components/HistoriaClinica/Default';
 import Pet from './components/Pet/Default';
+import MainContent from './components/MainContent/Default';
 import './App.css'
 
 function App() {
@@ -11,14 +12,14 @@ function App() {
       <Navbar />
       <Grid left={
         <Card>
-          <Pet></Pet>
+          <Pet />
         </Card>
       } 
       middle={
         <Card>
-          <p>middle</p> 
+          <MainContent />
         </Card>
-    } 
+      } 
       right={
         <Card>
           <HistoriaClinica 
