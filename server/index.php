@@ -1,6 +1,5 @@
 <?php 
 
- require "Config/ENV.php";
  require "Config/Autoload.php";
 
  use Config\Autoload as Autoload;
