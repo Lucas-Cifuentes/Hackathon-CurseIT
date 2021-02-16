@@ -1,0 +1,5 @@
+.image {
+  border-radius: 50%;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+  margin-left: 2rem;
+}

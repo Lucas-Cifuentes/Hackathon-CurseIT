@@ -1,0 +1,10 @@
+.button {
+  width: 100%;
+  margin: 1.5rem auto;
+  padding: 0.5rem 1rem;
+  border-radius: 40%;
+  background: rgba(125, 226, 209, 0.906);
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+}
