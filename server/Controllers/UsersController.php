@@ -19,4 +19,9 @@ class UsersController {
         $result = ADO::execute_sp("sp_get_user($id)");
         echo json_encode($result, JSON_PRETTY_PRINT);
     }
+
+    public function Login($username, $password) {
+        $result = ADO::execute_sp("sp_login_user('$username', '$password')");
+        echo json_encode($result, JSON_PRETTY_PRINT);
+    }
 }
